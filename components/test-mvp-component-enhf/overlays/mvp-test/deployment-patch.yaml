@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-mvp-component-enhf
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/susdas_quay_org/mvp-dev-vubd-tenant/mvp-test-app/test-mvp-component-enhf@sha256:b2b9918539ce22f293dda0f02a46ae331095241b2aededcb934722504a6f9635
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
